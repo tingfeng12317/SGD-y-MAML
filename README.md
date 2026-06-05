@@ -18,6 +18,7 @@ pip install torch==2.10.0+cu128 torchvision==0.25.0+cu128 torchaudio==2.10.0+cu1
 pip install torch==2.10.0 torchvision==0.25.0 torchaudio==2.10.0
 ```
 ## 3. Project Structure
+```text
 SGD-y-MAML/
 ├── algorithms/              # Core meta-learning algorithms
 │   ├── __init__.py
@@ -49,7 +50,7 @@ SGD-y-MAML/
 ├── .gitignore
 ├── LICENSE
 └── README.md
-
+```
 ## 4. Datasets
 [下载链接 + 放置路径]
 
