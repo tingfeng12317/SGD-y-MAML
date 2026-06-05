@@ -18,7 +18,37 @@ pip install torch==2.10.0+cu128 torchvision==0.25.0+cu128 torchaudio==2.10.0+cu1
 pip install torch==2.10.0 torchvision==0.25.0 torchaudio==2.10.0
 ```
 ## 3. Project Structure
-[目录树说明]
+SGD-y-MAML/
+├── algorithms/              # Core meta-learning algorithms
+│   ├── __init__.py
+│   ├── maml.py
+│   ├── sgd_y_fomaml.py
+│   ├── sgd_y_maml.py
+│   └── taming_maml.py
+├── data/                    # Dataset preprocessing
+│   ├── cifar_fs_dataset.py
+│   └── omniglot_dataset.py
+├── figures/                 # Visualization scripts & experimental data
+│   ├── result/              # Ablation and comparison logs
+│   ├── update_tracking/     # Gradient tracking data
+│   ├── ablation_image.py    # Ablation visualization
+│   ├── compare_image.py     # 4-algorithm comparison plots
+│   ├── update_2.py          # Update magnitude comparison
+│   └── update_image.py      # Gradient tracking visualization
+├── models/                  # CNN architectures
+│   ├── __init__.py
+│   ├── cifar_fs_net.py
+│   └── omniglot_net.py
+├── ablation_analysis.py     # Ablation study analysis
+├── ablation_config.py       # Ablation configuration
+├── ablation_runner.py       # Ablation experiment runner
+├── cifar_fs_train.py        # CIFAR-FS training script
+├── config.py                # Global configuration
+├── omniglot_train.py        # Omniglot training script
+├── requirements.txt         # Python dependencies
+├── .gitignore
+├── LICENSE
+└── README.md
 
 ## 4. Datasets
 [下载链接 + 放置路径]
