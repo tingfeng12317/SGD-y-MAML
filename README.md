@@ -4,7 +4,18 @@
 We propose SGD-y, an optimizer based on Stochastic Gradient Descent (SGD). It reduces gradient noise in the inner loop of Model-Agnostic Meta-Learning (MAML) and dynamically adjusts the inner-loop steps. We introduce the SGD-y-MAML framework based on it. The framework retains SGD’s stability and adds two mechanisms, a dual convergence mechanism and an inter-layer adaptive learning rate. The former gets adaptive inner-loop steps by gradient residual detection and parameter drift verification. The latter balances the updates between shallow textural features and deep semantic features. Both mechanisms reduce gradient noise and remove the need for validation-based early stopping. Snapshot rollback conflicts with second-order derivatives during calculation, so we keep the snapshot mechanism in SGD-y-FOMAML and remove it from SGD-y-MAML. We still report accuracy on the validation set for direct comparison with baselines. On Omniglot (5-way 1-shot), SGD-y-MAML reaches 2.52% higher test accuracy than MAML, and SGD-y-FOMAML exceeds First-Order MAML (FOMAML) by 5.6%. On CIFAR-FS (5-way 5-shot), the absence of snapshot rollback leads to slight overfitting. There is a 2.84% gain in validation accuracy and a 2.71% drop in test accuracy relative to MAML. This finding reveals that adaptive step counts will drive the meta-initialization away from the cross-task common intersection in the absence of overfitting safeguards.
 
 ## 2. Environment
-[Python/PyTorch 版本 + 安装命令]
+
+- **OS**: Windows / Linux
+- **Python**: 3.10+
+- **PyTorch**: 2.10.0 (CUDA 12.8)
+- **GPU**: NVIDIA GPU with CUDA support
+
+```bash
+# PyTorch with CUDA 12.8
+pip install torch==2.10.0+cu128 torchvision==0.25.0+cu128 torchaudio==2.10.0+cu128 --index-url https://download.pytorch.org/whl/cu128
+
+# PyTorch CPU-only
+pip install torch==2.10.0 torchvision==0.25.0 torchaudio==2.10.0
 
 ## 3. Project Structure
 [目录树说明]
