@@ -1,0 +1,14 @@
+\begin{table}[h]
+\centering
+\caption{MAML vs SGD-Y-MAML (5-way 1-shot, 5 seeds)}
+\label{tab:comparison}
+\begin{tabular}{lccccc}
+\toprule
+算法 & ValAcc (\%) & TrainLoss & TrainAcc (\%) & 步数 & 显存(MB) \\
+\midrule
+MAML & 93.85 & 0.110 & 95.80 & 5.0 & 129.0 \\
+FOMAML-FO & 85.74 & 0.332 & 88.13 & 5.0 & 95.2 \\
+SGD-Y-MAML & 96.37 & 0.100 & 98.33 & 6.0 & 190.6 \\
+\bottomrule
+\end{tabular}
+\end{table}

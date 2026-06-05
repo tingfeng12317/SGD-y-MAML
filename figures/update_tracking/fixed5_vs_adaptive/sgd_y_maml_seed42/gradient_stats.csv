@@ -1,0 +1,1 @@
+episode,task_id,inner_step,layer_name,grad_norm,residual_norm,residual_ratio,depth_type,converged,total_steps

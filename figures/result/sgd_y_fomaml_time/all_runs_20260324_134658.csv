@@ -1,0 +1,6 @@
+algorithm,display_name,seed,best_val_acc,final_train_loss,final_train_acc,avg_steps,gpu_memory_mb,elapsed_time_min,detailed_log
+sgd_y_maml_fo,SGD-Y-FO-MAML (B5-FO),42,0.9061,0.4187,0.9233,19.7,322.2,24.71,./results/sgd_y_fomaml_time\detailed_logs\sgd_y_maml_fo_seed42.json
+sgd_y_maml_fo,SGD-Y-FO-MAML (B5-FO),123,0.9049,0.3126,0.9433,19.7,322.2,24.43,./results/sgd_y_fomaml_time\detailed_logs\sgd_y_maml_fo_seed123.json
+sgd_y_maml_fo,SGD-Y-FO-MAML (B5-FO),456,0.9021,0.3430,0.9433,19.7,322.2,25.03,./results/sgd_y_fomaml_time\detailed_logs\sgd_y_maml_fo_seed456.json
+sgd_y_maml_fo,SGD-Y-FO-MAML (B5-FO),789,0.9112,0.4483,0.9167,19.7,322.2,25.05,./results/sgd_y_fomaml_time\detailed_logs\sgd_y_maml_fo_seed789.json
+sgd_y_maml_fo,SGD-Y-FO-MAML (B5-FO),1024,0.9151,0.2705,0.9600,19.7,322.2,24.70,./results/sgd_y_fomaml_time\detailed_logs\sgd_y_maml_fo_seed1024.json

@@ -1,0 +1,16 @@
+algorithm,display_name,seed,best_val_acc,final_train_loss,final_train_acc,avg_steps,gpu_memory_mb,detailed_log
+maml,MAML (B1),42,0.9435,0.1169,0.9500,5.0,129.0,./results/full_comparison\detailed_logs\maml_seed42.json
+maml,MAML (B1),123,0.9387,0.1101,0.9533,5.0,129.0,./results/full_comparison\detailed_logs\maml_seed123.json
+maml,MAML (B1),456,0.9400,0.0674,0.9800,5.0,129.0,./results/full_comparison\detailed_logs\maml_seed456.json
+maml,MAML (B1),789,0.9399,0.1097,0.9500,5.0,129.0,./results/full_comparison\detailed_logs\maml_seed789.json
+maml,MAML (B1),1024,0.9304,0.1450,0.9567,5.0,129.0,./results/full_comparison\detailed_logs\maml_seed1024.json
+maml_fo,FOMAML (B1-FO),42,0.8587,0.3999,0.8733,5.0,95.2,./results/full_comparison\detailed_logs\maml_fo_seed42.json
+maml_fo,FOMAML (B1-FO),123,0.8603,0.2361,0.9000,5.0,95.2,./results/full_comparison\detailed_logs\maml_fo_seed123.json
+maml_fo,FOMAML (B1-FO),456,0.8512,0.1816,0.9300,5.0,95.2,./results/full_comparison\detailed_logs\maml_fo_seed456.json
+maml_fo,FOMAML (B1-FO),789,0.8564,0.4780,0.8167,5.0,95.2,./results/full_comparison\detailed_logs\maml_fo_seed789.json
+maml_fo,FOMAML (B1-FO),1024,0.8607,0.3642,0.8867,5.0,95.2,./results/full_comparison\detailed_logs\maml_fo_seed1024.json
+sgd_y_maml,SGD-Y-MAML (B5),42,0.9648,0.0882,0.9900,5.9,187.6,./results/full_comparison\detailed_logs\sgd_y_maml_seed42.json
+sgd_y_maml,SGD-Y-MAML (B5),123,0.9651,0.1351,0.9667,6.0,187.4,./results/full_comparison\detailed_logs\sgd_y_maml_seed123.json
+sgd_y_maml,SGD-Y-MAML (B5),456,0.9639,0.0871,0.9867,6.0,195.3,./results/full_comparison\detailed_logs\sgd_y_maml_seed456.json
+sgd_y_maml,SGD-Y-MAML (B5),789,0.9648,0.1004,0.9867,5.8,187.6,./results/full_comparison\detailed_logs\sgd_y_maml_seed789.json
+sgd_y_maml,SGD-Y-MAML (B5),1024,0.9600,0.0903,0.9867,6.0,195.1,./results/full_comparison\detailed_logs\sgd_y_maml_seed1024.json

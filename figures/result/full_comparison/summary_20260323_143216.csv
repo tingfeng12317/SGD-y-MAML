@@ -1,0 +1,4 @@
+algorithm,display_name,n_seeds,ValAcc,TrainLoss,TrainAcc,Steps,GPU_MB
+maml,MAML (B1),5,93.85¡À0.43%,0.110¡À0.02,95.80¡À1.13%,5.0¡À0.00,129.0¡À0.00
+maml_fo,FOMAML (B1-FO),5,85.74¡À0.35%,0.332¡À0.11,88.13¡À3.74%,5.0¡À0.00,95.2¡À0.00
+sgd_y_maml,SGD-Y-MAML (B5),5,96.37¡À0.19%,0.100¡À0.02,98.33¡À0.84%,6.0¡À0.07,190.6¡À3.76

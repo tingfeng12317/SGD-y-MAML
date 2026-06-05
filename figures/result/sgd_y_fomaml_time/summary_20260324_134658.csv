@@ -1,0 +1,2 @@
+algorithm,display_name,n_seeds,ValAcc,TrainLoss,TrainAcc,Steps,GPU_MB,Time_min
+sgd_y_maml_fo,SGD-Y-FO-MAML (B5-FO),5,90.79¡À0.46%,0.359¡À0.07,93.73¡À1.55%,19.7¡À0.02,322.2¡À0.00,24.8¡À0.23
