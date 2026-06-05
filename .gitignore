@@ -214,5 +214,57 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 
+# === Windows ===
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# === 原始数据集（在根目录，不上传）===
+omniglot/
+cifar-fs/
+miniimagenet/
+*.tar
+*.zip
+*.gz
+*.npy
+*.npz
+*.jpg
+*.jpeg
+*.png
+*.bmp
+
+# data/ 文件夹里的原始数据（保留 .py 代码）===
+data/**/*.tar
+data/**/*.zip
+data/**/*.gz
+data/**/*.npy
+data/**/*.npz
+data/**/*.jpg
+data/**/*.jpeg
+data/**/*.png
+!data/**/*.py
+
+# === 模型权重（不上传）===
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+checkpoints/
+
+# === 绘图结果（保留 .py 代码，不上传 SVG/CSV/JSON）===
+figures/*.svg
+figures/*.png
+figures/*.jpg
+figures/*.pdf
+figures/*.csv
+figures/*.json
+figures/*.log
+figures/*.txt
+!figures/*.py
+
+# === 其他日志 ===
+logs/
+wandb/
 # Streamlit
 .streamlit/secrets.toml
