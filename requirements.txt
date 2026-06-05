@@ -1,0 +1,53 @@
+# Core deep learning framework
+# NOTE: PyTorch with CUDA 12.8 requires manual installation or specific index URL:
+# pip install torch==2.10.0+cu128 torchvision==0.25.0+cu128 torchaudio==2.10.0+cu128 --index-url https://download.pytorch.org/whl/cu128
+# OR for CPU-only: pip install torch==2.10.0 torchvision==0.25.0 torchaudio==2.10.0
+
+# Scientific computing & visualization
+numpy==1.26.4
+scipy==1.10.0
+matplotlib==3.10.8
+contourpy==1.3.3
+cycler==0.12.1
+fonttools==4.62.0
+kiwisolver==1.5.0
+packaging==26.0
+pyparsing==3.3.2
+pillow==12.1.1
+
+# Network & graph utilities
+networkx==3.6.1
+
+# Symbolic math (used by PyTorch internals)
+sympy==1.14.0
+mpmath==1.3.0
+
+# Progress bar
+tqdm==4.67.3
+
+# HTTP requests (for dataset download)
+requests==2.32.5
+certifi==2026.2.25
+charset-normalizer==3.4.6
+idna==3.11
+urllib3==2.6.3
+
+# Date utilities
+python-dateutil==2.9.0.post0
+six==1.17.0
+
+# PyTorch ecosystem & dependencies
+# torch==2.10.0+cu128
+# torchvision==0.25.0+cu128
+# torchaudio==2.10.0+cu128
+typing-extensions==4.15.0
+filelock==3.20.0
+fsspec==2025.12.0
+jinja2==3.1.3
+markupsafe==3.0.2
+
+# Model hub utility (optional)
+modelscope==1.36.3
+
+# Terminal color output (Windows compatibility)
+colorama==0.4.6
