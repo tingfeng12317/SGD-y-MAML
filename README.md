@@ -53,13 +53,12 @@ SGD-y-MAML/
 ```
 ## 4. Datasets
 Download the following datasets to the root directory:
-```text
 - Omniglot: https://github.com/brendenlake/omniglot
   Place in: omniglot/
 
 - CIFAR-FS: https://www.kaggle.com/datasets/keywhere/cifarfs?resource=download
   Place in: cifar-fs/
-```
+
 ## 5. Installation
 [clone + pip install]
 
