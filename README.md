@@ -25,9 +25,3 @@ We propose SGD-y, an optimizer based on Stochastic Gradient Descent (SGD). It re
 
 ## 7. Key Features
 [算法特点，3-4条]
-
-## 8. Results
-[可选：主要实验结论]
-
-## 9. Citation
-[论文发表后补 BibTeX]
