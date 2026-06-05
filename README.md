@@ -16,7 +16,7 @@ pip install torch==2.10.0+cu128 torchvision==0.25.0+cu128 torchaudio==2.10.0+cu1
 
 # PyTorch CPU-only
 pip install torch==2.10.0 torchvision==0.25.0 torchaudio==2.10.0
-
+```
 ## 3. Project Structure
 [目录树说明]
 
