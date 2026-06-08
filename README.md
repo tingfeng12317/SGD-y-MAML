@@ -84,6 +84,7 @@ pip install -r requirements.txt
 
 ## 6. Usage
 ### 6.1 Training
+```bash
 # Omniglot 5-way 1-shot (4-algorithm comparison for compare_image.py)
 python omniglot_train.py --n_way 5 --k_shot 1 --algorithms maml sgd_y_maml maml_fo sgd_y_maml_fo taming_maml --seeds 42 123 456 789 1024 --episodes 1000 --save_dir ./figures/result/full_comparison
 
@@ -98,10 +99,31 @@ python cifar_fs_train.py --algorithms maml sgd_y_maml --n_way 5 --k_shot 1 --epi
 
 # CIFAR-FS 5-way 5-shot
 python cifar_fs_train.py --algorithms maml sgd_y_maml --n_way 5 --k_shot 5 --episodes 20000 --seeds 42 --save_dir ./figures/result/cifar_fs_5w5s
+```
 ### 6.2 Ablation Study
-[消融实验命令]
-### 6.3 Visualization
-[绘图命令]
+```bash
+# Run ablation (ensure output path is ./figures/result/ablation_b3_drift_0.015/detailed_logs)
+python ablation_runner.py --experiment B
+```
+### 6.3 Data Tracking
+```bash
+# Smax adaptive steps
+python omniglot_train.py --algorithms sgd_y_maml --track_updates --track_dir ./figures/update_tracking/Smax --save_dir ./figures/update_tracking/Smax --seeds 42
 
+# Fixed 5-step
+python omniglot_train.py --algorithms sgd_y_maml --sgdy_fixed_steps 5 --track_updates --track_dir ./figures/update_tracking/fixed5_vs_adaptive --save_dir ./figures/update_tracking/fixed5_vs_adaptive --seeds 42
+```
+### 6.4 Plotting
+
+```bash
+python compare_image.py      # Figure 3: 4-algorithm comparison (2 subfigures)
+python ablation_image.py     # Figure 4: Ablation study (4 subfigures)
+python update_image.py       # Figure 5 & 6: Gradient trajectory + Layer-wise convergence
+python update_2.py           # Figure 7: Fixed vs adaptive update magnitudes (2 subfigures)
+```
 ## 7. Key Features
-[算法特点，3-4条]
+
+- **SGD-y optimizer** — An SGD-based adaptive inner-loop optimizer that reduces gradient noise and dynamically adjusts inner-loop steps for MAML.
+- **Dual convergence mechanism** — Employs gradient residual detection and parameter drift verification to enable adaptive step counts without validation-set dependency.
+- **Inter-layer adaptive learning rate** — Balances parameter updates between shallow textural features and deep semantic features.
+- **Empirical validation** — Achieves 2.52% higher test accuracy than MAML on Omniglot (5-way 1-shot); experiments on CIFAR-FS (5-way 5-shot) further reveal the overfitting risk without overfitting safeguards.
