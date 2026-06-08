@@ -84,7 +84,20 @@ pip install -r requirements.txt
 
 ## 6. Usage
 ### 6.1 Training
-[训练命令]
+# Omniglot 5-way 1-shot (4-algorithm comparison for compare_image.py)
+python omniglot_train.py --n_way 5 --k_shot 1 --algorithms maml sgd_y_maml maml_fo sgd_y_maml_fo taming_maml --seeds 42 123 456 789 1024 --episodes 1000 --save_dir ./figures/result/full_comparison
+
+# Omniglot 5-way 1-shot (MAML 10 steps vs SGD-y)
+python omniglot_train.py --n_way 5 --k_shot 1 --algorithms maml sgd_y_maml --inner_steps 10 --seeds 42 123 456 789 1024 --episodes 1000 --save_dir ./figures/result/5way1shot_10steps
+
+# Omniglot 5-way 5-shot
+python omniglot_train.py --n_way 5 --k_shot 5 --algorithms maml sgd_y_maml --seeds 42 123 456 789 1024 --episodes 1000 --save_dir ./figures/result/5way5shot
+
+# CIFAR-FS 5-way 1-shot
+python cifar_fs_train.py --algorithms maml sgd_y_maml --n_way 5 --k_shot 1 --episodes 60000 --seeds 42 --save_dir ./figures/result/cifar_fs_5w1s
+
+# CIFAR-FS 5-way 5-shot
+python cifar_fs_train.py --algorithms maml sgd_y_maml --n_way 5 --k_shot 5 --episodes 20000 --seeds 42 --save_dir ./figures/result/cifar_fs_5w5s
 ### 6.2 Ablation Study
 [消融实验命令]
 ### 6.3 Visualization
