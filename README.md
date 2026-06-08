@@ -75,7 +75,12 @@ CIFAR-FS/
 ```
 
 ## 5. Installation
-[clone + pip install]
+
+```bash
+git clone https://github.com/tingfeng12317/SGD-y-MAML.git
+cd SGD-y-MAML
+pip install -r requirements.txt
+```
 
 ## 6. Usage
 ### 6.1 Training
